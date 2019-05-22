@@ -1,0 +1,16 @@
+module hello {
+    yang-version 1;
+    namespace "urn:opendaylight:params:xml:ns:yang:hello";
+    prefix "hello";
+
+    revision "2015-01-05" {
+        description "Initial revision of hello model";
+    }
+    rpc getFlow{
+        input{
+          leaf flowId{
+            type string;
+          }
+        }
+    }
+}
